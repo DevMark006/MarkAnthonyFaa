@@ -487,10 +487,14 @@ footer {
     .nav-links a {
         margin: 20px 0; 
     }
+    .nav-links a::after {
+        content: ''; 
+        background: #131313;   
+        height: 0px; 
+    }
     .hamburger {
         display: flex;
     }
-
     #about {
         padding: 6rem 2rem 6rem 2rem;
     }
