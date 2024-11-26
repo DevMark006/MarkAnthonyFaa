@@ -471,13 +471,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+     .nav-links {
         display: none; 
         flex-direction: column;
         position: absolute;
-        top: 60px; 
+        top: 70px; 
         right: 0;
-        background-color: #242424;
+        background-color: #131313;
         width: 100%;
         text-align: center;
     }
