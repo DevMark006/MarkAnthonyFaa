@@ -91,7 +91,7 @@ nav {
 }
 .content-txt {
     font-family: "League Spartan", sans-serif;
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: var(--text-color);  
     text-align: center;
 }
@@ -99,7 +99,6 @@ nav {
     color: rgba(255, 187, 0, 1);
     font-family: "League Spartan", sans-serif;
     background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
-    text-decoration: white underline 5px;
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -110,7 +109,6 @@ nav {
     color: rgba(255, 187, 0, 1);
     font-family: "League Spartan", sans-serif;
     background: linear-gradient(to right, #aaff83, #01ff38, #6438ca, #c71313, #eedf11);
-    text-decoration: white underline 5px;
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
