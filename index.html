@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <a href="#content"><img src="logo.png" id="logo" alt="Logo"></a>
             <div id="hamburger" class="hamburger">
                 <div class="line"></div>
@@ -121,30 +121,20 @@
     
     <section id="work">
         <h1 class="title">My Work</h1>
-        <article class="work-cont"> 
-            <h2 class="title-work">Customer Service Survey Form</h2>
-            <p class="description-work">A customer service survey form is a simple, user-friendly design made with HTML and CSS. 
-            It is used to collect feedback from customers about their customer services to help them know their customer opinion 
-            in the services they provide and use recommendations to provide quality customer service.
-            </p>
-            <img src="survey-form-img.png" id="project" alt="Screenshot of Customer Service Survey Form Project">
-        </article>
-
-        <article class="work-cont">
-            <h2 class="title-work">Product Landing Page</h2>
-            <p class="description-work">As a junior web developer, one of the projects I created is the Elegant Interiors Hub landing page with HTML and CSS. 
-            It is used as a landing page for interior and furniture businesses to promote quality service for their potential customers when they visit this site.
-            </p>
-            <img src="elegant-interior-img.png" id="project" alt="Screenshot of Product Landing Page Project">
-        </article>
-
-        <article class="work-cont">
-            <h2 class="title-work">Weather Tracker Website</h2>
-            <p class="description-work">One of my projects as a junior web developer is to develop "Cloudy," a weather tracking website using HTML, CSS, and Javascript. I use the weather API from openweathermap to provide important weather details. 
-                The purpose of this is to track the weather in a specific city and give weather details such as temperature, current weather, wind speed, and humidity. It can show the current weather and 3 hours interval weather forecast.
-            </p>
-            <img src="cloudy-weather.png" id="project" alt="Screenshot of Weather App Project">
-        </article>
+           <div class="project-container">
+               <article class="work-cont"> 
+                    <img src="survey-form-img.png" id="project" alt="Screenshot of Customer Service Survey Form Project">
+               </article>
+               <article class="work-cont">
+                    <img src="elegant-interior-img.png" id="project" alt="Screenshot of Product Landing Page Project">
+                </article>
+                <article class="work-cont">
+                    <img src="elegant-interior-img.png" id="project" alt="Screenshot of Product Landing Page Project">
+                </article>
+                <article class="work-cont">
+                    <img src="elegant-interior-img.png" id="project" alt="Screenshot of Product Landing Page Project">
+                </article>
+            </div>
     </section>
 
     <div class="container">
@@ -164,11 +154,11 @@
         <form action="/submit" id="form-content" method="POST" onsubmit="return validateForm()">
             <textarea name="message" id="message" placeholder="Your message here." required></textarea>
             <input type="text" name="name" id="name" autocomplete="given-name" placeholder="Your name" required>
-            <button type="submit" name="submit" id="submit">Submit</button> 
+            <button type="submit" name="submit" id="submit">Send your message</button> 
         </form>
     </div>
     <div class="contact-links">
-        <h1 class="contact-links-title"><span class="underline-text">Get in touch</span>✌️</h1> 
+        <h1 class="contact-links-title"><span class="underline-text">Social Connect</span>✌️</h1> 
         <div class="social-links">
             <i class="bi bi-linkedin" style="font-size: 35px; color:white; margin-right: 10px;"></i>
             <a id="link" href="https://www.linkedin.com/in/mark-anthony-faa-293556236">Mark Anthony Faa</a><br>
@@ -185,7 +175,7 @@
     </section>
     
     <footer>
-            <p class="copyright">&copy;2024 Designed & Developed By Mark Anthony Faa.</p>       
+            <p class="copyright">&copy; 2024-2025 All rights reserved. Made with passion by Mark Anthony Faa 😎</p>       
     </footer>
     <script src="script.js"></script>
 </body>
