@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
     --text-color: #ffff;
@@ -77,7 +79,7 @@ nav {
 
 /*Content Style*/
 #content {
-    padding: 10rem 15rem 5rem 15rem;
+    padding: 15rem 15rem 5rem 15rem;
 }
 .content-photo {
     display: flex; 
@@ -85,41 +87,23 @@ nav {
     align-items: center; 
 }
 #profile {
-    width: 380px;
-    height: 400px;
+    width: 270px;
+    height: 270px;
     border-radius: 900px;
 }
 .content-txt {
-    font-family: "League Spartan", sans-serif;
-    font-size: 3vw;
-    color: var(--text-color);  
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 2.4vw;
+    color: #DAA513;
     text-align: center;
-}
-#txt-x {
-    color: rgba(255, 187, 0, 1);
-    font-family: "League Spartan", sans-serif;
-    background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 4.5s linear infinite;
-}
-#txt-y {
-    color: rgba(255, 187, 0, 1);
-    font-family: "League Spartan", sans-serif;
-    background: linear-gradient(to right, #aaff83, #01ff38, #6438ca, #c71313, #eedf11);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 4.5s linear infinite;
+    font-weight: normal;
 }
 .btn {
     color: var(--text-color);
-    font-family: "League Spartan", sans-serif;
-    padding: 1.5rem;
-    border: white solid 2px; 
+    font-family: "Poltawski Nowy", serif;
+    padding: 1rem 1.7rem 1rem 1.7rem;
+    border: white solid 1px; 
     text-decoration: none;
 }
 .btn:hover {
@@ -134,34 +118,30 @@ nav {
 
 /*About Style*/
 #about {
-    padding: 6rem 15rem 6rem 15rem;
+    padding: 10rem 15rem 6rem 15rem;
 }
 .about-content {
     padding: 0;
 }
 .title {
-    font-family: "League Spartan", sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
+    font-family: "Poltawski Nowy", serif;
+    font-size: 2.4rem;
+    font-weight: 400;
     color: var(--text-color);
-    text-decoration: yellowgreen underline 3px;
-    text-underline-offset: 13px;
     margin-top: 2rem; 
     margin-bottom: 1rem; 
 }
 .description {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poltawski Nowy", serif;
     text-align: justify;
     color: var(--text-color);
     margin-bottom: 3rem; 
+    font-size: 1.2rem;
+    font-weight:lighter;
+    margin-left: 5rem;
 }
-.title-heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--text-color);
-    margin-top: 1.5rem; 
-    margin-bottom: 1rem; 
+.lntxt {
+    color: #FFBB00;
 }
 /*About Style End*/
 
@@ -170,31 +150,33 @@ nav {
     padding: 6rem 15rem 6rem 15rem;
 }
 .skills-cont {
-    display: flex;
-    flex-wrap: wrap; 
-    margin-top: 1.5rem; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px;  
+}
+.skills-title {
+    color: white ;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 .cont {
-    margin-right: 3rem;
-    margin-bottom: 3rem; 
-    padding: 10px 70px;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    display: flex;          /* Enables flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center;    /* Horizontally center the content */
+    background-color: #272727; /* Set the background to grey */
+    padding: 15px;          /* Optional: Add some space around the content */
+    margin: 1px;           /* Optional: Add margin between each container */
+    border-radius: 10px;    /* Optional: Round the corners */
+    transition: background-color 0.5s ease;
 }
-#skills-logo {
-    width: 100%;
-    height: 10rem;
+.cont:hover {
+    background-color: #01b4ab;
 }
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    } 
+#skill-logo {
+    margin-bottom: 10px;    /* Space between the image and the text */
+    width: 100px; /* Adjust size of the icons */
+    height: auto;
 }
 /*Skills Style End*/
 
@@ -223,28 +205,30 @@ nav {
 /*Work Style End*/
 
 /*Qoute Style*/
-.qoute {
+.container {
     padding: 6rem 15rem 6rem 15rem;
-    font-size: 2.5rem;
+    font-family: "Agdasima", serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    justify-content: center; 
 }
-#author {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
+img {
+    width: 350px;
 }
-.paragraph {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #c99d0d, #0870c5, #0da7d6, #0e1cdd, #c99d0d);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 4.5s linear infinite;
+.quote {
+    margin-top: 250px;
+    font-size: 70px;
+    font-weight: normal;
 }
-@keyframes animate-gradient {
-    to {
-        background-position: 200%;
-    }
+.highlight {
+    color: #FFBB00;
+}
+.author {
+    font-size: 20px;
+    margin-top: 10px;
 }
 /*Qoute Style End*/
 
