@@ -198,7 +198,7 @@ nav {
 }
 /*Work Style End*/
 
-/*Qoute Style*/
+/*Quote Style*/
 .container {
     padding: 6rem 15rem 6rem 15rem;
     font-family: "Agdasima", serif;
@@ -285,9 +285,7 @@ textarea {
     color: var(--text-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 60px;
-}
-.underline-text {
-    font-weight: 500;  
+    font-weight: 400;
 }
 #link {
     color: var(--text-color);
@@ -330,10 +328,6 @@ footer {
     .content-txt {
         font-size: 4rem;
     }
-    .qoute {
-        text-align: center;
-        font-size: 2rem;
-    }
     .description {
         font-size: 1.3rem;
     }
@@ -342,6 +336,15 @@ footer {
     }
     .nav-links a {
         font-size: 20px;
+    }
+    #project {
+        width: 985px;
+        height: auto;
+    }
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
+        gap: 50px;  
     }
 }
 
@@ -362,9 +365,9 @@ footer {
    #work {
         padding: 6rem 5rem 6rem 5rem;
    }   
-   .qoute {
-        padding: 5rem 5rem 5rem 5rem;
-        font-size: 2.1rem;
+   #project {
+    width: 680px;
+    height: auto; 
    }
     #contact {
         padding: 6rem 5rem 6rem 5rem;
@@ -394,6 +397,11 @@ footer {
     .title {
         font-size: 2.4rem;
     }
+    #profile {
+        width: 250px;
+        height: 250px;
+        border-radius: 900px;
+    }
     #skills {
         padding: 6rem 4rem 6rem 4rem;
     }
@@ -401,16 +409,18 @@ footer {
         margin-right: 0rem;
         margin-left: 0rem;
     } 
-    #skills-logo {
-        width: 100%;
-        height: 8.7rem;
-    }
     #work {
         padding: 6rem 4rem 6rem 4rem;
     }   
-    .qoute {
-        padding: 5rem 8.5rem 5rem 8.5rem;
-        font-size: 1.5rem;
+    #project {
+        width: 580px;
+        height: auto; 
+    }
+    .container {
+        padding: 6rem 4rem 6rem 4rem;
+    }
+    img {
+        width: 280px;
     }
     #contact {
         padding: 6rem 4rem 6rem 4rem;
@@ -440,17 +450,21 @@ footer {
     }
     #skills {
         padding: 6rem 4rem 6rem 4rem;
-    }
-    #skills-logo {
-        width: 100%;
-        height: 8.7rem;
     }  
     #work {
         padding: 6rem 4rem 6rem 4rem;
     }
-    .qoute {
-        padding: 5rem 5rem 5rem 5rem;
-        font-size: 1.3rem;
+    #project {
+        width: 442px;
+        height: auto; 
+    }
+    .quote {
+        margin-top: 250px;
+        font-size: 55px;
+        font-weight: normal;
+    }
+    .container {
+        padding: 6rem 4rem 6rem 4rem;
     }
     #contact {
         padding: 5rem 5rem 5rem 5rem;
@@ -496,34 +510,49 @@ footer {
         font-size: 2rem;
     }
     .description {
-        margin-bottom: 0.5rem;  
+        margin-bottom: 0.5rem; 
+        margin-left: 0.2rem;
     }
     #skills {
         padding: 6rem 2rem 6rem 2rem;
     }
     .cont {
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
     } 
+    .skills-cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 4 equal columns */
+        gap: 10px;  
+    }
     #work {
         padding: 6rem 2rem 6rem 2rem;
     }
-    .qoute {
-        padding: 2rem 4rem 2rem 4rem;
-        font-size: 1rem;
+    #project {
+        width: 702px;
+        height: auto; 
+    }
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 4 equal columns */
+        gap: 8px;  
+    }
+    .container {
+        padding: 6rem 2rem 6rem 2rem;
+        gap: 10px;
     }
     #contact {
         padding: 6rem 2rem 6rem 2rem;
         display: block;
     }
     textarea {
-        width: 91vw;
+        width: 89.5vw;
     }
     #name {
-        width: 91.5vw;
+        width: 89.5vw;
     }
     #submit{
-        width: 92vw;
+        width: 91.4vw;
     }
     .contact-links {
         text-align: left;
@@ -532,11 +561,11 @@ footer {
         padding: 10rem 1rem 5rem 1rem;
     }
     .content-txt {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     #profile {
-        width: 350px;
-        height: 360px;
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -560,21 +589,30 @@ footer {
     #work {
         padding: 6rem 1.5rem 6rem 1.5rem;
     }
-    .qoute {
-        padding: 2rem 4rem 2rem 4rem;
-        font-size: 0.9rem;
-        text-align: center;
+    #project {
+        width: 590px;
+        height: auto; 
+    }
+    .quote {
+        font-size: 35px;  
+    }
+    img {
+        width: 200px;
+    }
+    .container {
+        padding: 6rem 1.5rem 6rem 1.5rem;
+        gap: 10px;
     }
     #contact {
         padding: 6rem 1.5rem 6rem 1.5rem;
         display: block;
     }
     .content-txt {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
     #profile {
-        width: 290px;
-        height: 299px;
+        width: 200px;
+        height: 200px;
     }
     
 }
@@ -597,41 +635,62 @@ footer {
     .cont {
         margin-right: 0rem;
         margin-left: 0rem;
-    } 
-    #skills-logo {
-        width: 100%;
-        height: 4.5rem;
     }  
+    .skills-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
+        gap: 10px;  
+    }
     #work {
         padding: 6rem 1.5rem 6rem 1.5rem;
     }  
-    .qoute {
-        padding: 2rem 1.8rem 2rem 1.8rem;
-        font-size: 1rem;
-        text-align: center;
+    #project {
+        width: 430px;
+        height: auto; 
     }
     #contact {
         padding: 6rem 1rem 6rem 1rem;
         display: block;
     }
+    #submit {
+        width: 92.9vw;
+    }
     .contact-title {
         font-size: 25px;
     }
     #profile {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+    img {
+        width: 150px;
+    }
+    .quote {
+        font-size: 38px;  
+    } 
+    .copyright {
+        font-size: 11px;
+    }
+    .content-txt {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 425px) {
     .cont {
-        margin-right: 0.8rem;
+        margin-right: 0rem;
         margin-bottom: 0rem; 
         padding: 0px 0px;
     }
-    #skills-logo {
-        width: 100%;
-        height: 7rem;
+    #project {
+        width: 390px;
+        height: auto; 
+    }
+    #skills, #contact, #about, #work, #content, #container {
+        padding: 6rem 1rem 6rem 1rem;
+    }
+    .copyright {
+        font-size: 13px;
     }
 }
 
@@ -639,20 +698,20 @@ footer {
     .cont {
         margin-right: 0rem;
         margin-bottom: 0rem; 
-        padding: 1rem;
+        padding: 0rem;
     }
-    #skills-logo {
-       width: 100%;
-       height: 8rem;
+    #project {
+        width: 344px;
+        height: auto; 
     }
     .content-txt {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     textarea {
-        width: 89vw;
+        width: 87vw;
     }
     #name {
-        width: 90.1vw;
+        width: 87vw;
     }
     #submit{
         width: 91.1vw;
@@ -663,6 +722,9 @@ footer {
     #link {
         font-size: 1rem;
     }
+    .quote {
+        font-size: 25px;  
+    }
     .copyright {
         font-size: 12px;
     }
@@ -670,13 +732,23 @@ footer {
 
 @media (max-width: 360px) {
     .cont {
-        margin-right: 1rem;
-        margin-bottom: 0.5rem; 
-        padding: 1rem;              
+        margin-right: 0rem;
+        margin-bottom: 0rem; 
+        padding: 0rem;              
     }
-    #skills-logo {
-       width: 100%;
-       height: 6.5rem;
+    #project {
+        width: 330px;
+        height: auto; 
+    }
+    .quote {
+        font-size: 22px;  
+    }
+    #profile {
+        width: 175px;
+        height: 175px;
+    }
+    .title {
+        font-size: 1.5rem;
     }
 }
 
@@ -693,31 +765,45 @@ footer {
          margin-top: 5rem;
     }
     textarea {
-        width: 93vw;
+        width: 90vw;
     }
     #name {
-        width: 93.8vw;
+        width: 90vw;
     }
     #submit{
         width: 95vw;
     }
     #link {
-        font-size: 16px;
-    }
-    .qoute {
-        font-size: 10px;
+        font-size: 14px;
     }
     .copyright {
-        font-size: 15px;
+        font-size: 10px;
+    }
+    img {
+        width: 160px;
+    }
+    .quote, .author {
+        font-size: 30px;  
+        margin-top: 0.9rem;
     }
     .cont {
-        margin-right: 0.8rem;
+        margin-right: 0rem;
         margin-bottom: 0rem; 
         padding: 0px 0px;
     }
-    #skills-logo {
-        width: 100%;
-        height: 5rem;
+    .skills-title {
+        font-size: 10px;
+    }
+    #project {
+            width: 288px;
+            height: auto; 
+    }
+    .container {
+        display:block;
+        gap: 0px;
+    }
+    .contact-links-title {
+        font-size: 1.2rem;
     }
     #content {
         padding: 10rem 1rem 1rem 1rem;
@@ -735,4 +821,3 @@ footer {
         padding: 6rem 0.4rem 1.5rem 0.4rem;
     }
 }
-
